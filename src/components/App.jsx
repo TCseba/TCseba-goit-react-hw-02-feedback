@@ -1,16 +1,12 @@
+import React from 'react';
+import styles from './App.module.css';
+import Counter from './Counter';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className={styles.container}>
+      <h1>Please leave feedback</h1>
+      <Counter />
     </div>
   );
 };
